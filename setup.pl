@@ -13,8 +13,12 @@ my @confs = (
 for my $pair (@confs) {
     my ($path, $repo) = @$pair;
     $path = expand($path);
-    next if (-d "$path");
-    system(qq{git clone "$repo" "$path"});
+    if (-d "$path") {
+        system(qq{(cd "$path" && git pull)});
+    }
+    else {
+        system(qq{git clone "$repo" "$path"});
+    }
 }
 
 sub expand {
