@@ -20,6 +20,7 @@ fi
 
 cargo build --release
 
+
 if [[ -e target/release/alacritty ]]; then
     sudo cp target/release/alacritty /usr/local/bin # or anywhere else in $PATH
     sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
@@ -41,4 +42,9 @@ if [[ -e target/release/alacritty ]]; then
     cp "$(pwd)/extra/completions/alacritty.bash" ~/.config/alacritty/completions.bash
     echo "To install source completions"
     echo 'echo "source ~/.config/alacritty/completions.bash" >> ~/.bashrc'
+fi
+
+if [[ ! -e ~/.config/alacritty ]]; then
+    cd ~/.config
+    ln -s ~/.config/nat-config/alacritty .
 fi
