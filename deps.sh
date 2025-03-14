@@ -1,6 +1,11 @@
 #!/bin/bash
-sudo apt install git build-essential fonts-firacode \
-	 neovim perl-doc libjson-perl i3 wget
+sudo apt update -y
+#sudo apt upgrade -y
+sudo apt install -y git build-essential fonts-firacode \
+    neovim perl-doc libjson-perl i3 wget
+
+sudo apt install -y sway sfwbar swaylock wdisplays \
+    wl-mirror wmenu j4-dmenu-desktop
 
 if ! command -v hugo
 then
