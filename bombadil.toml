@@ -1,0 +1,8 @@
+
+dotfiles_dir = ".config/nat-config"
+
+
+[settings.dots]
+
+i3status = { source = "i3status", target = ".config/i3status" }
+sway = { source = "sway", target = ".config/sway" }

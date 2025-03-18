@@ -1,0 +1,9 @@
+
+set $lout DP-1
+set $rout DP-3
+
+output $lout position 0 0
+output $rout position 2560 0
+
+bindsym $mod+Shift+comma move workspace to $lout
+bindsym $mod+Shift+period move workspace to $rout
