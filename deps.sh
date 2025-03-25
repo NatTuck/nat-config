@@ -3,12 +3,20 @@ sudo apt update -y
 #sudo apt upgrade -y
 sudo apt install -y git build-essential fonts-firacode \
      neovim perl-doc libjson-perl i3 wget curl jq \
-     sway sfwbar swaylock wdisplays \
+     sway sfwbar swaylock wdisplays bemenu \
+     sway-notification-center swayidle swaybg \
      wl-mirror wmenu j4-dmenu-desktop
+
+HUGO=https://github.com/gohugoio/hugo/releases/download/v0.145.0/hugo_extended_0.145.0_linux-amd64.deb
+
+echo "Latest Hugo:"
+echo $(bash deps/latest-hugo.sh)
+echo "Getting Hugo:"
+echo $HUGO
 
 if ! command -v hugo
 then
-    echo wget -O /tmp/hugo.deb $(bash deps/latest-hugo.sh)
+    echo wget -O /tmp/hugo.deb $HUGO
     sudo dpkg -i /tmp/hugo.deb
     sudo apt-get -f install
 fi
