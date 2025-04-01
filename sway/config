@@ -16,7 +16,7 @@ workspace 1 output DP-1
 workspace 9 output DP-3
 
 # Your preferred terminal emulator
-set $term gnome-terminal
+set $term konsole || gnome-terminal
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
