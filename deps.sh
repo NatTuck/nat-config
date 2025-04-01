@@ -35,3 +35,5 @@ fi
 
 rustup update
 cargo install toml-bombadil
+
+cargo install --git https://github.com/neovide/neovide

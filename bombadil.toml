@@ -6,3 +6,4 @@ dotfiles_dir = ".config/nat-config"
 
 i3status = { source = "i3status", target = ".config/i3status" }
 sway = { source = "sway", target = ".config/sway" }
+nvim = { source = "nvim", target = ".config/nvim" }
