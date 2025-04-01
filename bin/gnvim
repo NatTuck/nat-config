@@ -1,0 +1,2 @@
+#!/bin/bash
+nvim-qt "$@" -- --listen "/run/user/$UID/nvim.gvim"
