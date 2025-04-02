@@ -7,6 +7,7 @@ dotfiles_dir = ".config/nat-config"
 i3status = { source = "i3status", target = ".config/i3status" }
 sway = { source = "sway", target = ".config/sway" }
 nvim = { source = "nvim", target = ".config/nvim" }
+nvim-qt = { source = "nvim-qt", target = ".config/nvim-qt" }
 konsole = { source = "konsole", target = "~/.local/share/konsole" }
 konsolerc = { source = "konsole/konsolerc", target = ".config/konsolerc" }
 gnvim = { source = "bin/gnvim", target = "~/.local/bin/gnvim" }
