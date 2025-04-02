@@ -1,2 +1,2 @@
 #!/bin/bash
-nvim --server "/run/user/$UID/nvim.gvim" --remote "$@"
+nvim --server "/run/user/$UID/nvim.gvim" --remote "$(pwd)/$1"
