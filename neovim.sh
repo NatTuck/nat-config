@@ -1,4 +1,4 @@
-bash ./nerdfonts.sh
+bash ./deps/nerdfonts.sh
 
 sudo apt install neovim-qt luarocks ripgrep
 
