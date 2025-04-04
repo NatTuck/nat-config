@@ -6,6 +6,7 @@ dotfiles_dir = ".config/nat-config"
 
 i3status = { source = "i3status", target = ".config/i3status" }
 sway = { source = "sway", target = ".config/sway" }
+neovide = { source = "neovide", target = ".config/neovide" }
 nvim-qt = { source = "nvim-qt", target = ".config/nvim-qt" }
 konsole = { source = "konsole", target = "~/.local/share/konsole" }
 konsolerc = { source = "konsole/konsolerc", target = ".config/konsolerc" }

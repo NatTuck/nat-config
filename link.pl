@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 use 5.36.0;
-use wan FATAL => 'all';
+use warnings FATAL => 'all';
 
 chdir("$ENV{HOME}/.config");
 system("pwd");
