@@ -17,6 +17,9 @@ return {
           show_on_keyword = false,
           show_on_trigger_character = false,
         },
+        menu = {
+          auto_show = false,
+        },
       },
     },
   },
