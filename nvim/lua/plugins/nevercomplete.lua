@@ -1,15 +1,7 @@
 return {
   {
-    "hrsh7th/nvim-cmp",
-    opts = {
-      completion = {
-        autocomplete = false,
-      },
-    },
-  },
-  {
     "saghen/blink.cmp",
-    enabled = false,
+    enabled = true,
     opts = {
       completion = {
         trigger = {
@@ -22,6 +14,9 @@ return {
         },
       },
     },
+    sources = {
+      default = { "lsp" },
+    },
   },
   {
     "echasnovski/mini.pairs",
@@ -31,8 +26,17 @@ return {
     "saadparwaiz1/cmp_luasnip",
     enabled = false,
   },
+
+  -- These probably aren't even installed.
   {
     "hrsh7th/cmp-buffer",
     enabled = false,
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    enabled = false,
+    opts = function(_, opts)
+      opts.comp = { autocomplete = false }
+    end,
   },
 }
