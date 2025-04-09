@@ -35,3 +35,6 @@ rustup update
 cargo install toml-bombadil
 
 cargo install --git https://github.com/neovide/neovide
+
+npm install -g @vtsls/language-server
+npm install -g eslint
