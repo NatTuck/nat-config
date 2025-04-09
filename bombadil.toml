@@ -12,3 +12,4 @@ konsole = { source = "konsole", target = "~/.local/share/konsole" }
 konsolerc = { source = "konsole/konsolerc", target = ".config/konsolerc" }
 gnvim = { source = "bin/gnvim", target = "~/.local/bin/gnvim" }
 vc = { source = "bin/vc", target = "~/.local/bin/vc" }
+clang-format = { source = "clang-format", target = "~/.clang-format" }

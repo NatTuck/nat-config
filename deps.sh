@@ -6,12 +6,12 @@ sudo apt install -y git build-essential fonts-firacode \
 	sway sfwbar swaylock wdisplays bemenu \
 	sway-notification-center swayidle swaybg \
 	wl-mirror wmenu j4-dmenu-desktop \
-	konsole
+	g++-14 konsole clang clangd rubocop ruby-dev
 
 HUGO=https://github.com/gohugoio/hugo/releases/download/v0.145.0/hugo_extended_0.145.0_linux-amd64.deb
 
 echo "Latest Hugo:"
-echo $(bash deps/latest-hugo.sh)
+deps/latest-hugo.sh
 echo "Getting Hugo:"
 echo $HUGO
 
