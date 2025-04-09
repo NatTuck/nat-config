@@ -38,3 +38,4 @@ cargo install --git https://github.com/neovide/neovide
 
 npm install -g @vtsls/language-server
 npm install -g eslint
+npm i -g bash-language-server

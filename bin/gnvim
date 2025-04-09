@@ -1,3 +1,3 @@
 #!/bin/bash
-. ~/.bashrc
+. ~/.config/bash/path.sh
 neovide "$@" -- --listen "/run/user/$UID/nvim.gvim"
