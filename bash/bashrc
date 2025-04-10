@@ -76,7 +76,7 @@ if [ -f ~/.config/bash/aliases.sh ]; then
 fi
 
 if [ -f ~/.config/bash/path.sh ]; then
-    ~/.config/bash/path.sh
+    . ~/.config/bash/path.sh
 fi
 
 # enable programmable completion features (you don't need to enable
