@@ -26,6 +26,10 @@ return {
     "saadparwaiz1/cmp_luasnip",
     enabled = false,
   },
+  {
+    "windwp/nvim-ts-autotag",
+    enabled = false,
+  },
 
   -- These probably aren't even installed.
   {
