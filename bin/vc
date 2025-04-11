@@ -1,2 +1,4 @@
 #!/bin/bash
-nvim --server "/run/user/$UID/nvim.gvim" --remote "$(pwd)/$1"
+FILE="$(readlink -f "$1")"
+echo "opening: $FILE"
+nvim --server "/run/user/$UID/nvim.gvim" --remote "$FILE"
