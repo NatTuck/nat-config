@@ -1,2 +1,4 @@
 BasedOnStyle: WebKit
 IndentWidth: 4
+BreakAfterReturnType: TopLevelDefinitions
+BreakBeforeBraces: Stroustrup
