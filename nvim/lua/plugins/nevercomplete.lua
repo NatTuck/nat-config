@@ -4,6 +4,9 @@ return {
     enabled = true,
     opts = {
       completion = {
+        ghost_text = {
+          enabled = false,
+        },
         trigger = {
           -- TODO: Figure out the rest.
           show_on_keyword = false,
@@ -11,6 +14,11 @@ return {
         },
         menu = {
           auto_show = false,
+        },
+        list = {
+          selection = {
+            preselect = false,
+          },
         },
       },
     },
@@ -28,6 +36,14 @@ return {
   },
   {
     "windwp/nvim-ts-autotag",
+    enabled = false,
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    enabled = false,
+  },
+  {
+    "rafamadriz/friendly-snippets",
     enabled = false,
   },
 

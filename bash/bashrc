@@ -92,6 +92,8 @@ fi
 
 export PYTHONPYCACHEPREFIX="/tmp/pycache-$USER"
 
+export EDITOR=vim
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/nat/Apps/miniforge3/bin/conda' 'shell.bash' 'hook' 2>/dev/null)"
