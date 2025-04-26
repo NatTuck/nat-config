@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 vim.g.minipairs_disable = true
+vim.g.lazyvim_prettier_needs_config = false
 --vim.opt.relativenumber = false
 
 vim.api.nvim_create_autocmd("FileType", {
