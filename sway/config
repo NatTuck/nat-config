@@ -12,8 +12,6 @@ set $right l
 
 include "./$(hostname)"
 
-workspace 1 output DP-1
-workspace 9 output DP-3
 
 # Your preferred terminal emulator
 set $term konsole || gnome-terminal

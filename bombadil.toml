@@ -12,6 +12,7 @@ konsole = { source = "konsole", target = "~/.local/share/konsole" }
 konsolerc = { source = "konsole/konsolerc", target = ".config/konsolerc" }
 gnvim = { source = "bin/gnvim", target = "~/.local/bin/gnvim" }
 vc = { source = "bin/vc", target = "~/.local/bin/vc" }
+ssh-gargoyle = { source = "bin/ssh-gargoyle", target = "~/.local/bin/ssh-gargoyle" }
 bash = { source = "bash", target = ".config/bash" }
 bashrc = { source = "bash/bashrc", target = "~/.bashrc" }
 clang-format = { source = "clang-format", target = "~/.clang-format" }

@@ -1,8 +1,7 @@
-export XKBOPTIONS="ctrl:nocaps"
+#export XKBOPTIONS="ctrl:nocaps"
 setxkbmap -option ctrl:nocaps
+lxpolkit &
+xhost +si:localuser:root
 #xscreensaver &
 #feh --bg-scale /home/nat/Pictures/wallpaper/katla-822_2560x1440.jpg &
 #seafile-applet &
-
-flatpak run io.github.NhekoReborn.Nheko &
-syncthing-gtk &

@@ -8,3 +8,5 @@ vim.keymap.del("v", "<A-k>")
 vim.keymap.del("n", "<A-j>")
 vim.keymap.del("i", "<A-j>")
 vim.keymap.del("v", "<A-j>")
+
+vim.keymap.set("n", "Q", "gwap", { desc = "Reflow paragraph" })

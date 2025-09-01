@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ssh -J psu-vpn nat@172.16.34.24
