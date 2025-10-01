@@ -27,7 +27,7 @@ return {
     },
   },
   {
-    "echasnovski/mini.pairs",
+    "nvim-mini/mini.nvim",
     enabled = false,
   },
   {
