@@ -10,3 +10,12 @@ vim.keymap.del("i", "<A-j>")
 vim.keymap.del("v", "<A-j>")
 
 vim.keymap.set("n", "Q", "gwap", { desc = "Reflow paragraph" })
+
+local toggle_diagnostics = function()
+  if vim.diagnostic.is_enabled() then
+    vim.diagnostic.enable()
+  else
+    vim.diagnostic.disable()
+  end
+end
+vim.keymap.set("n", "<leader>ct", toggle_diagnostics, { desc = "Toggle diagnostics" })

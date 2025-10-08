@@ -5,6 +5,7 @@ sudo apt install neovim-qt luarocks ripgrep
 wget -O /tmp/neovim.tar.gz https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 mkdir -p ~/.local
 cd ~/.local
+rm -rf nvim-linux-x86_64
 tar xzvf /tmp/neovim.tar.gz
 
 cd ~/.local/bin
