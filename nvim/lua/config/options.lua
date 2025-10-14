@@ -17,3 +17,5 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.bo.expandtab = true
   end,
 })
+
+vim.env.ASDF_TOOL_VERSIONS_FILENAME = ".tools-versions"
