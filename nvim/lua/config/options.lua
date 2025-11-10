@@ -19,3 +19,11 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.env.ASDF_TOOL_VERSIONS_FILENAME = ".tools-versions"
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    -- vim.diagnostic.disable()
+    vim.diagnostic.enable(false)
+  end,
+})
