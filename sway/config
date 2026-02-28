@@ -46,11 +46,12 @@ for_window [shell="xwayland"] title_format "[X] %title"
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
+
+#exec swayidle -w \
+#     timeout 600 'swaylock -f -c 000000' \
+#     timeout 900 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+#     before-sleep 'swaylock -f -c 000000'
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
@@ -78,6 +79,8 @@ for_window [shell="xwayland"] title_format "[X] %title"
 
     # Lock screen
     bindsym $mod+Home exec swaylock -c 000000
+    bindsym $mod+End exec  swaymsg "output * dpms on; output * enable"
+    bindsym $mod+Shift+End exec  swaymsg "output * dpms off"
 
     # Kill focused window
     bindsym $mod+Shift+q kill

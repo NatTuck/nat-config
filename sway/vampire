@@ -1,0 +1,11 @@
+
+set $lout DP-1
+set $rout DP-2
+
+output $lout position 0 0
+output $rout position 2560 0
+
+bindsym $mod+Shift+comma move workspace to $lout
+bindsym $mod+Shift+period move workspace to $rout
+
+bindsym $mod+Shift+slash exec ~/.config/sway/swap-monitors.sh
