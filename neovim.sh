@@ -2,6 +2,8 @@ bash ./deps/nerdfonts.sh
 
 sudo apt install neovim-qt luarocks ripgrep
 
+rm -rf ~/.local/share/nvim
+
 wget -O /tmp/neovim.tar.gz https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 mkdir -p ~/.local
 cd ~/.local
