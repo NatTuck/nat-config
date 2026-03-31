@@ -36,6 +36,8 @@ cargo install toml-bombadil
 
 cargo install --git https://github.com/neovide/neovide
 
+cargo install mise
+
 npm install -g @vtsls/language-server
 npm install -g eslint
 npm i -g bash-language-server
