@@ -3,6 +3,9 @@
 mkdir -p ~/Apps/src
 cd ~/Apps/src
 
+# Can replace checkout with
+# cargo install mise --locked
+
 if [ ! -d mise ]; then
   git clone https://github.com/jdx/mise.git
 fi
