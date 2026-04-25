@@ -83,6 +83,14 @@ if [ -f ~/.config/bash/mise.sh ]; then
     . ~/.config/bash/mise.sh
 fi
 
+if [ -f ~/.config/more-env.sh ]; then
+    . ~/.config/more-env.sh
+fi
+
+if [ -f ~/.env ]; then
+    . ~/.env
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
